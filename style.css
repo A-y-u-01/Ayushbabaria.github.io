@@ -1,11 +1,11 @@
-/* --- Global Reset & Typography --- */
+/* --- Global Reset & Typography (Dark Theme) --- */
 body {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.7; /* Better readability */
+  line-height: 1.7;
   margin: 0;
   padding: 0;
-  background-color: #f5f7fa; /* Soft background */
-  color: #333;
+  background-color: #121212; /* Deep Dark Background */
+  color: #e0e0e0; /* Light Gray Text */
   font-weight: 300;
   font-size: 17px;
 }
@@ -13,7 +13,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #1a237e; /* Deep Blue Headings */
+  color: #4db6ac; /* Teal/Mint Accent for Headings */
   letter-spacing: -1px;
   font-weight: 700;
 }
@@ -31,18 +31,18 @@ h3 {
 
 /* --- Header and Navigation --- */
 header {
-  background: #1a237e;
+  background: #1f2937; /* Darker Navy/Charcoal Header */
   color: #fff;
   padding: 1.5em 0;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 nav a {
-  color: #fff;
+  color: #b0bec5; /* Muted White/Blue Link Color */
   margin: 0 25px;
   text-decoration: none;
   font-weight: 500;
@@ -52,19 +52,20 @@ nav a {
 }
 
 nav a:hover {
-  color: #8c9eff; /* Lighter hover color */
+  color: #4db6ac; /* Bright Teal on Hover */
   transform: translateY(-2px);
 }
 
-/* --- Main Content Layout & Page Load Animation --- */
+/* --- Main Content Layout & Animation --- */
 main {
   padding: 50px;
   max-width: 1200px;
   margin: 40px auto;
-  background: #ffffff;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Premium, deeper shadow */
+  background: #1f2937; /* Main Card Background */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  animation: slideIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+  border: 1px solid #37474f; /* Subtle border for separation */
+  animation: slideIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 @keyframes slideIn {
@@ -82,12 +83,12 @@ main {
 .hero {
   text-align: center;
   padding: 70px 0;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #37474f;
   margin-bottom: 50px;
 }
 
 .subtitle {
-  color: #3a506b;
+  color: #90a4ae;
   font-weight: 400;
   font-size: 1.4em;
   margin-top: 5px;
@@ -99,8 +100,8 @@ main {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 30px;
-  border: 7px solid #e8eaf6; /* Very light border */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 7px solid #4db6ac; /* Teal Accent Border */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
 }
 
@@ -110,7 +111,7 @@ main {
 
 .value-prop {
   font-size: 1.4em;
-  color: #546e7a;
+  color: #cfd8dc;
   max-width: 900px;
   margin: 25px auto;
   font-weight: 400;
@@ -130,25 +131,26 @@ main {
 }
 
 .pipeline-card {
-  background: #fdfdff;
+  background: #293848; /* Slightly Lighter Card Background */
   padding: 35px;
   border-radius: 10px;
-  border: 1px solid #e8eaf6;
-  text-align: center; /* Center content in the card */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #37474f;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s;
 }
 
 .pipeline-card:hover {
-  transform: translateY(-10px); /* Significant lift on hover */
-  box-shadow: 0 25px 50px rgba(26, 35, 126, 0.2); /* Deep shadow with primary color tint */
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  border-color: #4db6ac; /* Highlight border on hover */
 }
 
 .pipeline-card .icon {
   font-size: 3em;
   display: block;
   margin-bottom: 15px;
-  color: #4caf50; /* Security Green Accent */
+  color: #4db6ac;
 }
 
 /* --- Call-to-Action Buttons (CTAs) --- */
@@ -164,31 +166,31 @@ main {
 }
 
 .primary-cta {
-  background: #1a237e;
-  color: #fff;
-  border: 2px solid #1a237e;
+  background: #4db6ac; /* Teal Primary CTA */
+  color: #121212;
+  border: 2px solid #4db6ac;
 }
 
 .primary-cta:hover {
-  background: #283593;
-  transform: scale(1.05);
+  background: #26a69a;
+  transform: scale(1.03);
 }
 
 .secondary-cta {
   background: transparent;
-  color: #1a237e;
-  border: 2px solid #1a237e;
+  color: #4db6ac;
+  border: 2px solid #4db6ac;
 }
 
 .secondary-cta:hover {
-  background: #e8eaf6;
-  transform: scale(1.05);
+  background: #293848; /* Dark subtle hover */
+  transform: scale(1.03);
 }
 
 /* --- About Page Specifics (Structured Lists) --- */
 .bio-section {
   padding-bottom: 40px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #37474f;
   margin-bottom: 40px;
 }
 
@@ -202,15 +204,15 @@ main {
 .skill-group {
   flex: 1 1 calc(33% - 30px);
   padding: 25px;
-  border: 1px solid #cfd8dc;
+  border: 1px solid #37474f;
   border-radius: 10px;
-  background: #fafafa;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: #293848;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-group h3 {
-  color: #1a237e;
-  border-bottom: 2px solid #bbdefb;
+  color: #4db6ac;
+  border-bottom: 2px solid #37474f;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -225,11 +227,12 @@ main {
   font-size: 1em;
   border-left: 3px solid transparent;
   transition: border-left 0.3s, background-color 0.3s;
+  color: #cfd8dc;
 }
 
 .skill-group li:hover {
-  background-color: #f1f8e9; /* Light green highlight */
-  border-left: 3px solid #4caf50; /* Security green accent */
+  background-color: #37474f;
+  border-left: 3px solid #4db6ac;
 }
 
 /* --- Project Case Study Specifics --- */
@@ -238,25 +241,41 @@ main {
 }
 
 .case-study-section h2 {
-  color: #3a506b;
-  border-bottom: 2px solid #bbdefb;
+  color: #4db6ac;
+  border-bottom: 2px solid #37474f;
   padding-bottom: 15px;
   margin-top: 40px;
+}
+
+.tech-used {
+  font-size: 1.1em;
+  color: #90a4ae;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.project-visual {
+  max-width: 90%;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #37474f;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* --- Footer --- */
 footer {
   text-align: center;
   padding: 30px;
-  background: #3a506b;
-  color: #e0e0e0;
+  background: #1f2937;
+  color: #cfd8dc;
   margin-top: 40px;
   border-radius: 0 0 12px 12px;
   font-size: 1em;
+  border-top: 1px solid #37474f;
 }
 
 footer a {
-  color: #90caf9;
+  color: #4db6ac;
   text-decoration: none;
 }
 
