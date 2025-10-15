@@ -1,5 +1,6 @@
+/* General Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -7,33 +8,49 @@ body {
   color: #333;
 }
 
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+/* Header and Navigation */
 header {
   background: #2c3e50;
   color: #fff;
   padding: 1em 0;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #3498db;
+}
+
+/* Main Content Layout */
 main {
   padding: 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
+/* Hero Section (Home Page) */
 .hero {
   text-align: center;
   padding: 40px 0;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+  margin-bottom: 30px;
 }
 
 .profile-pic {
@@ -41,32 +58,72 @@ main {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border: 4px solid #3498db;
 }
 
-h1 {
-  color: #2c3e50;
-  margin-top: 0;
+.value-prop {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+/* Featured Project Section */
+.featured-project {
+  padding: 20px;
+  text-align: center;
 }
 
 .cta-button {
   display: inline-block;
   background: #3498db;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.case-study-section,
-.about-section {
-  padding: 30px 0;
+.cta-button:hover {
+  background: #2980b9;
+}
+
+/* About Section */
+.skills-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.skills-section th,
+.skills-section td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.skills-section th {
+  background-color: #f2f2f2;
+  width: 30%;
+}
+
+/* Project Case Study Section */
+.case-study-section h2,
+.case-study-section h3 {
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 30px;
 }
 
 .tech-used {
   font-style: italic;
   color: #7f8c8d;
+  font-size: 0.9em;
+  margin-bottom: 20px;
 }
 
 .project-visual {
@@ -74,12 +131,15 @@ h1 {
   height: auto;
   border: 1px solid #ccc;
   margin: 15px 0;
+  border-radius: 4px;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #ecf0f1;
   color: #7f8c8d;
-  margin-top: 20px;
+  margin-top: 30px;
+  border-radius: 0 0 8px 8px;
 }
