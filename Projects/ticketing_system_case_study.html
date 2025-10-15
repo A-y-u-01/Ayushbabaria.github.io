@@ -1,0 +1,32 @@
+<main class="case-study-section"></main>
+    <h1>Project: Secure Help Desk Ticketing System</h1>
+    <p class="tech-used">**Technologies Used:** Python, Flask, SQLite, HTML/CSS, JSON</p>
+    
+    <div class="project-details">
+        
+        <h2>1. The Challenge</h2>
+        <p>
+            The goal was to build a full-stack application to streamline the submission and management of IT support tickets. The core **security challenge** was ensuring **data integrity**, maintaining a clear **audit trail**, and implementing robust **access control** in a simulated multi-user environment.
+        </p>
+
+        <h2>2. My Role & Security Process</h2>
+        <p>
+            I was the sole developer. The process involved defining a schema for ticket data (priority, status, user ID), designing a user authentication and session management system, and developing CRUD functionality using Flask for the backend and SQLite for persistent storage.
+        </p>
+        <p>
+            **Key Security Implementation:**
+            <ul>
+                <li>**Access Control:** Implemented basic **user roles (Staff vs. Admin)**, ensuring only authenticated staff could manage and prioritize tickets.</li>
+                [cite_start]<li>**Secure Logging & Auditing:** Developed a feature to **export all ticket logs in JSON format**[cite: 31]. This simulates real-world requirements for easy, machine-readable auditing and secure backup outside the live database.</li>
+            </ul>
+        </p>
+        <img src="../assets/ticketing-screenshot-1.jpg" alt="Ticketing System Admin Panel" class="project-visual">
+        
+        <h2>3. Results & Impact</h2>
+        <p>
+            The system was tested with over 40 sample tickets. [cite_start]The implementation of priority sorting and escalation rules led to a simulated **35% reduction in response time** in testing scenarios[cite: 30]. The detailed technical walkthroughs created as part of the project simulate real-world training documentation.
+        </p>
+    </div>
+    
+    <a href="../index.html" class="cta-button">Back to Home</a>
+</main>
